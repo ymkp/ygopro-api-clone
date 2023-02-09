@@ -21,6 +21,7 @@ export const configModuleOptions: ConfigModuleOptions = {
     JWT_PRIVATE_KEY_BASE64: Joi.string().required(),
     JWT_ACCESS_TOKEN_EXP_IN_SEC: Joi.number().required(),
     JWT_REFRESH_TOKEN_EXP_IN_SEC: Joi.number().required(),
+    IMAGE_URL: Joi.string().required(),
     // DEFAULT_ADMIN_USER_PASSWORD: Joi.string().required(),
     // EMAIL_HOST: Joi.string().required(),
     // EMAIL_SECURE: Joi.string().optional(),

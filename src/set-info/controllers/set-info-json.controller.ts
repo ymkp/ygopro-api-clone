@@ -4,7 +4,7 @@ import { SetInfoJsonService } from '../services/set-info-json.service';
 
 @ApiTags('set-info-json')
 @Controller('set-info-json')
-// @ApiExcludeController()
+@ApiExcludeController()
 export class SetInfoJsonController {
   constructor(private readonly service: SetInfoJsonService) {}
 

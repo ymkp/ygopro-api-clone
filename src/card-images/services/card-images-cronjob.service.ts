@@ -41,7 +41,7 @@ export class CardImagesCronjobService {
         const res = await firstValueFrom(
           this.http.get(temp.url, { responseType: 'stream' }),
         );
-        await writeFile(dir, res.data);
+        await writeFile('static/' + dir, res.data);
         await this.tempRepo.update(temp.id, { isSuccess: true });
         await this.imageRepo.update(image.id, { url: dir });
         console.log('full OK : ', temp.ygoproId);
@@ -55,7 +55,7 @@ export class CardImagesCronjobService {
         const res = await firstValueFrom(
           this.http.get(temp.urlSmall, { responseType: 'stream' }),
         );
-        await writeFile(dir, res.data);
+        await writeFile('static/' + dir, res.data);
 
         await this.tempRepo.update(temp.id, { isSmallSuccess: true });
         await this.imageRepo.update(image.id, { urlSmall: dir });
@@ -70,7 +70,7 @@ export class CardImagesCronjobService {
         const res = await firstValueFrom(
           this.http.get(temp.urlCropped, { responseType: 'stream' }),
         );
-        await writeFile(dir, res.data);
+        await writeFile('static/' + dir, res.data);
 
         await this.tempRepo.update(temp.id, { isCroppedSuccess: true });
         await this.imageRepo.update(image.id, { urlCropped: dir });

@@ -4,7 +4,7 @@ import { CardJsonService } from '../services/card-json.service';
 
 @ApiTags('card-json')
 @Controller('card-json')
-// @ApiExcludeController()
+@ApiExcludeController()
 export class CardJsonController {
   constructor(private readonly service: CardJsonService) {}
 

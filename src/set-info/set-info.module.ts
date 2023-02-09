@@ -19,7 +19,13 @@ import { SetInfoService } from './services/set-info.service';
       SetInfoRepository,
     ]),
   ],
-  providers: [SetInfoJsonService, SetInfoService],
-  controllers: [SetInfoJsonController, SetInfoController],
+  providers: [
+    // SetInfoJsonService,
+    SetInfoService,
+  ],
+  controllers: [
+    // SetInfoJsonController,
+    SetInfoController,
+  ],
 })
 export class SetInfoModule {}

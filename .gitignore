@@ -38,8 +38,8 @@ lerna-debug.log*
 .env
 uploads
 assets/*
-images/**/*.png
-images/**/*.gif
-images/**/*.jpg
-images/**/*.jpeg
-images/**/*.webp
+static/**/*.png
+static/**/*.gif
+static/**/*.jpg
+static/**/*.jpeg
+static/**/*.webp
