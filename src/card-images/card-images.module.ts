@@ -3,7 +3,7 @@ import { Module } from '@nestjs/common';
 import { ScheduleModule } from '@nestjs/schedule';
 import { SharedModule } from 'src/shared/shared.module';
 import { TypeOrmExModule } from 'src/shared/typeorm-ex.module';
-import { CardImagesCronjobController } from './controllers/card-images-cronjob.controller';
+// import { CardImagesCronjobController } from './controllers/card-images-cronjob.controller';
 import { CardImagesTempRepository } from './repositories/card-images-temp.repository';
 import { CardImagesRepository } from './repositories/card-images.repository';
 import { CardImagesCronjobService } from './services/card-images-cronjob.service';
@@ -19,6 +19,6 @@ import { CardImagesCronjobService } from './services/card-images-cronjob.service
     ]),
   ],
   providers: [CardImagesCronjobService],
-  controllers: [CardImagesCronjobController],
+  // controllers: [CardImagesCronjobController],
 })
 export class CardImagesModule {}

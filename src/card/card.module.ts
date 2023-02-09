@@ -8,12 +8,12 @@ import { CardSetRepository } from 'src/set-info/repositories/card-set.repository
 import { SetInfoRepository } from 'src/set-info/repositories/set-info.repository';
 import { SharedModule } from 'src/shared/shared.module';
 import { TypeOrmExModule } from 'src/shared/typeorm-ex.module';
-import { CardJsonController } from './controllers/card-json.controller';
+// import { CardJsonController } from './controllers/card-json.controller';
 import { CardController } from './controllers/card.controller';
 import { CardRaceRepository } from './repositories/card-race.repository';
 import { CardTypeRepository } from './repositories/card-type.repository';
 import { CardRepository } from './repositories/card.repository';
-import { CardJsonService } from './services/card-json.service';
+// import { CardJsonService } from './services/card-json.service';
 import { CardService } from './services/card.service';
 
 @Module({
