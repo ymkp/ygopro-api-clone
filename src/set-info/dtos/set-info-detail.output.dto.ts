@@ -1,10 +1,8 @@
 import { Exclude, Expose } from 'class-transformer';
+import { CardInfoOnSetOutputDTO } from './card-info-on-set.output.dto';
 
 @Exclude()
-export class SetInfoOutputDTO {
-  @Expose()
-  id: number;
-
+export class SetInfoDetailOutputDTO {
   @Expose()
   name: string;
 
@@ -16,4 +14,6 @@ export class SetInfoOutputDTO {
 
   @Expose()
   tcgRelease: Date;
+
+  cards: CardInfoOnSetOutputDTO[];
 }

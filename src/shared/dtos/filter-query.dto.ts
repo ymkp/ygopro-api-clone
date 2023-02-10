@@ -25,36 +25,6 @@ export class OnlyDatesQuery {
 }
 
 export class CustomFilterQuery {
-  // @ApiPropertyOptional({
-  //   description: 'Optional, defaults to 20',
-  //   type: Number,
-  // })
-  // @IsNumber()
-  // @IsOptional()
-  // @Min(0)
-  // @Transform(({ value }) => parseInt(value, 10), { toClassOnly: true })
-  // limit = 20;
-
-  // @ApiPropertyOptional({
-  //   description: 'Optional, defaults to 1',
-  //   type: Number,
-  // })
-  // @IsNumber()
-  // @IsOptional()
-  // @Min(1)
-  // @Transform(({ value }) => parseInt(value, 10), { toClassOnly: true })
-  // page = 1;
-
-  // @ApiPropertyOptional({
-  //   description: 'Optional, defaults to 0',
-  //   type: Number,
-  // })
-  // @IsNumber()
-  // @IsOptional()
-  // @Min(0)
-  // @Transform(({ value }) => parseInt(value, 10), { toClassOnly: true })
-  // offset = 0;
-
   @ApiPropertyOptional({
     description: 'Optional, e.g : 2022-07-20. defaults to today at 00:00 ',
   })
@@ -68,16 +38,6 @@ export class CustomFilterQuery {
   @IsDateString()
   @IsOptional()
   lastDate: string;
-
-  @ApiPropertyOptional({
-    description: 'Optional, defaults to 1 (polri.go.id)',
-    type: Number,
-  })
-  @IsNumber()
-  @IsOptional()
-  @Min(0)
-  @Transform(({ value }) => parseInt(value, 10), { toClassOnly: true })
-  siteId = 1;
 
   @ApiPropertyOptional({
     description:
